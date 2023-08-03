@@ -12,45 +12,45 @@
 }
 
 /*! ----- HEADER ----- */
-header {
+/* header {
     background-color: purple;
     position: sticky;
     top:0;
     height: 105px;
     border-color: black;
     border-width: 10px;
-}
+} */
 
 header img{
-    width: 100px;
-    height: 100px;
-    position: absolute;
+    width: 50px;
+    height: 50px;
+    /* --position: absolute; */
     left: 10px;
     border-radius: 15px;
-    padding-top: 2px;
+    padding-top: 1px;
 }
 
-header nav{
+/* header nav{
     text-align: right;
     align-items: end;
-}
+} */
 
-header nav ul{
+/* header nav ul{
     list-style: none;
     color: black;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-}
+} */
 
-header nav ul li{
+/* header nav ul li{
     display: inline-block;
     margin-top: 50px;
     padding-right: 5px;
-}
+} */
 
 
-header nav ul li a{
+/* header nav ul li a{
     text-decoration: none;
     color: white;
     border: 2px solid white;
@@ -58,7 +58,7 @@ header nav ul li a{
     padding: 10px;
     margin: 2px;
     background-color: rgb(166, 60, 168);
-}
+} */
 
 
 
