@@ -11,23 +11,67 @@
     padding: 0;
 }
 
-/*! ----- HEADER ----- */
-/* header {
-    background-color: purple;
-    position: sticky;
-    top:0;
-    height: 105px;
-    border-color: black;
-    border-width: 10px;
-} */
+body{
+    background-color: #ffffe8;
+}
 
+/*! ----- HEADER ----- */
+header{
+    position: sticky;
+    top:0px;
+}
 header img{
-    width: 50px;
-    height: 50px;
-    /* --position: absolute; */
+    width: 80px;
+    height: 80px;
     left: 10px;
     border-radius: 15px;
     padding-top: 1px;
+}
+
+.menu-collapse{
+    color: white;
+    border-color: white;
+    background-color: #FFB2E6;
+    border: 1px solid;
+
+}
+
+.menu-collapse:hover{
+    color: white;
+    border-color: white;
+    background-color: #FFFFE8;
+}
+
+.menu-color-header{
+    background-color: #8447ff;
+    border-width: 1px;
+    border: solid;
+    border-color: white;
+    border-radius: 15px;
+    /* height: 100px; */
+}
+
+.menu-color-header a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px;
+    margin: 2px;
+}
+
+.color-header-button{
+    border-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.color-header-button:hover{
+    background-color: #FFFFE8;
+    color: #D972FF;
+    border:solid #D972FF 1px;
 }
 
 /* header nav{
@@ -65,9 +109,9 @@ header img{
 /*! ----- MAIN ----- */
 
 main{
-    background-color: white;
+    background-color: transparent;
     text-align: center;
-    margin: 50px;
+    margin: 15px;
 }
 
 
@@ -126,18 +170,22 @@ main{
     background-attachment: fixed;
     color: white;
     text-align: center;
+    border-radius: 10px;
 }
 
 
 
 .hero h1{
-    color: rgb(60, 1, 78);
+    color: #8447FF;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-align: center;
     border: 0px white solid;
     padding: 10px;
+    background-color: #FFB2E6;
+    border-radius: 10px 15px 0px 0px;
+    -webkit-text-stroke: 0.5px white;
 }
 
 .hero p{
@@ -151,30 +199,32 @@ main{
 
 .bienvenidos {
     padding-top: 20px;
-    background-color: white;
+    background-color: transparent;
 }
 
 .bienvenidos h2{
-    color: rgb(60, 1, 78);
+    color: #8447FF;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-align: center;
-    border-width: 2px black;
-    border: solid;
+    border: solid 0px;
     border-radius: 10px;
+    border-color: purple;
+    background-color: #FFB2E6;
+    padding: 10px;
+    -webkit-text-stroke: 0.5px white;
 }
 
 .columnas div{
-    border: 1px solid white;
-    width: 100%;
-    height: 800px;
+    /* width: 100%;
+    height: 100%; */
     text-align: center;
-    background-color: white;
+    background-color: transparent;
     margin-top: 10px;
     left: 100px;
     top:0;
-    display: flex;
+    /* display: flex; */
     border-radius: 10px;
 }
 
@@ -184,38 +234,41 @@ main{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    border-width: 2px black;
-    border: solid;
+    border-width: 0px #8447FF;
     border-radius: 10px;
     margin-right: 10px;
+    background-color: #8CFFDA;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .columnas div img{
-    height: 800px;
-    width: 800px;
+    height: 100vh;
+    width: 100%;
     border-radius: 10px;
 }
 
 .productos{
-    background-color: aqua;
+    background-color: #8CFFDA;
     border-radius: 10px;
-    
-
 }
 
 .productos h2{
     text-align: center;
-    background-color: pink;
+    background-color: #FFB2E6;
     padding: 20px;
     margin-top: 50px;
     text-transform: uppercase;
-    color: rgb(60, 1, 78);
+    color: #8447FF;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     border-width: 10px black;  
     border-radius: 10px 10px 0px 0px;
-    border: solid;
+    border: none;
+    -webkit-text-stroke: 0.5px white;
 }
 
 .productos div{
@@ -223,7 +276,7 @@ main{
     width: 250px;
     height: 350px;
     text-align: center;
-    background-color: blueviolet;
+    background-color: #8447FF;
     color: white;
     margin: 10px;
     display: inline-block;
@@ -233,7 +286,7 @@ main{
 }
 
 .productos div img{
-    width: 250px;
+    width: 240px;
     height: 200px;
 }
 
@@ -244,7 +297,7 @@ main{
 
 .productos div a{
     text-decoration: none;
-    background-color: rgb(166, 60, 168);
+    background-color: #8447FF;
     color: white;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
@@ -257,41 +310,66 @@ main{
     border-color: white;
 }
 
-.fixed{
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
+.productos div a:hover{
+    background-color: white;
+    color: #8447FF;
 }
 
-.fixed a img{
-    width: 50px;
-    height: 50px;
+
+.fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+}
+
+.fixed a i{
+    color: #003049;
+    font-size: 40px;
+}
+
+.fixed a i:hover{
+    color: #FFB2E6;
 }
 
 /*! ----- FOOTER ----- */
 footer{
-    background-color: purple;
-    height: 105px;
+    background-color: #8447FF;
+    height: 60px;
 }
 
 footer div{
-    text-align: right;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    padding-left: 20px;
 }
 
-footer div img{
+/* footer div img{
     width: 100px;
     height: 100px;
     position: absolute;
     left: 10px;
     border-radius: 15px;
     padding-top: 2px;
-}
+} */
 
-footer div a img{
+footer div a {
     width: 50px;
     height: 50px;
     margin-top: 40px;
     position: relative;
     left: 0;
-    padding-right: 5px;
+    padding-right: 10px;
+}
+
+footer div a i{
+    font-size: 40px;
+    margin-top: 90px;
+    position: relative;
+    left: 0;
+    color: #FFB2E6;
+}
+
+footer div a i:hover{
+    color: white;
 }
