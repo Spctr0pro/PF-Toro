@@ -31,15 +31,15 @@ header img{
 .menu-collapse{
     color: white;
     border-color: white;
-    background-color: #FFB2E6;
+    background-color: lightcyan;
     border: 1px solid;
 
 }
 
 .menu-collapse:hover{
-    color: white;
+    color: #8447ff;
     border-color: white;
-    background-color: #FFFFE8;
+    background-color: white;
 }
 
 .menu-color-header{
