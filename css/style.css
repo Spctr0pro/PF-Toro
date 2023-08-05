@@ -122,14 +122,10 @@ main{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     background-color: #FFB2E6;
-    border-radius: 15px 10px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
     margin: 0px;
     -webkit-text-stroke: 0.5px white;  
     color: #8447FF;
-}
-
-.galeria{
-    background-color: #8CFFDA;
 }
 
 .galeria div{
@@ -255,18 +251,6 @@ main section{
     -webkit-text-stroke: 0.5px white;
 }
 
-.columnas div{
-    text-align: center;
-    background-color: transparent;
-    margin-top: 10px;
-    left: 0px;
-    top:0;
-    /* display: flex; */
-    border-radius: 10px;
-    width: 100%;
-}
-
-
 .columnas div p{
     color: rgb(60, 1, 78);
     font-size: 15px;
@@ -280,15 +264,14 @@ main section{
     display: flex;
     align-items: center;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-
 }
 
 .columnas div img{
-    height: 100vh;
-    width: 60%;
+    height: 60vh;
+    width: 100%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 1188px)
