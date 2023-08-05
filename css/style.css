@@ -251,21 +251,20 @@ main section{
 }
 
 .columnas div{
-    /* width: 100%;
-    height: 100%; */
     text-align: center;
     background-color: transparent;
     margin-top: 10px;
-    left: 100px;
+    left: 0px;
     top:0;
     /* display: flex; */
     border-radius: 10px;
+    width: 100%;
 }
 
 
 .columnas div p{
     color: rgb(60, 1, 78);
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     border-width: 0px #8447FF;
@@ -280,9 +279,46 @@ main section{
 
 .columnas div img{
     height: 100vh;
-    width: 100%;
+    width: 60%;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 1188px)
+{
+    .columnas div img{
+        height: 100vh;
+        width: 70%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 990px)
+{
+    .columnas div img{
+        height: 50vh;
+        width: 60%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 770px)
+{
+    .columnas div img{
+        height: 50vh;
+        width: 80%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    .columnas div img{
+        height: 30vh;
+        width: 80%;
+        border-radius: 10px;
+    }
+}
+
 
 .productos{
     background-color: #8CFFDA;
@@ -377,9 +413,8 @@ footer{
 footer .footer-content{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: start;
-    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer p{
@@ -391,7 +426,7 @@ footer div{
     text-align: center;
     justify-items: center;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 /* footer div img{
