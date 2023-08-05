@@ -113,7 +113,35 @@ main{
     text-align: center;
     margin: 15px;
 }
+/*! GALERIA */
 
+.titulo-galeria{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #FFB2E6;
+    border-radius: 15px 10px 0px 0px;
+    margin: 0px;
+}
+
+.galeria{
+    background-color: #8CFFDA;
+}
+
+.galeria div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galeria div img{
+    margin: 10px;
+    border-radius: 15px;
+}
+/*!FIN GALERIA*/
 
 /*!CONTACTO*/
 .contacto {
@@ -158,7 +186,15 @@ main{
 }
 
 /*!FIN CANTACTO*/
+main {
+    margin-right: 5px;
+    margin-left: 5px;
+}
 
+main section{
+    margin-right: 0px;
+    margin-left: 0px;
+}
 
 .hero{
     width: 100%;
@@ -172,8 +208,6 @@ main{
     text-align: center;
     border-radius: 10px;
 }
-
-
 
 .hero h1{
     color: #8447FF;
@@ -194,7 +228,7 @@ main{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 0.5px white;    
 }
 
 .bienvenidos {
@@ -318,16 +352,16 @@ main{
 
 .fixed{
     position: fixed;
-    bottom: 0px;
+    bottom: 33px;
     right: 10px;
 }
 
-.fixed a i{
-    color: #003049;
-    font-size: 40px;
+.fixed a img{
+    width: 40px;
+    height: 40px;
 }
 
-.fixed a i:hover{
+.fixed a img:hover{
     color: #FFB2E6;
 }
 
@@ -335,6 +369,22 @@ main{
 footer{
     background-color: #8447FF;
     height: 60px;
+    margin-right: 4px;
+    margin-left: 4px;
+    border-radius: 10px;
+}
+
+footer .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    position: relative;
+}
+
+footer p{
+    text-align: center;
+    background-color: #8CFFDA;
 }
 
 footer div{
@@ -359,12 +409,10 @@ footer div a {
     margin-top: 40px;
     position: relative;
     left: 0;
-    padding-right: 10px;
 }
 
 footer div a i{
     font-size: 40px;
-    margin-top: 90px;
     position: relative;
     left: 0;
     color: #FFB2E6;
