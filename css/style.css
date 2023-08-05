@@ -124,6 +124,8 @@ main{
     background-color: #FFB2E6;
     border-radius: 15px 10px 0px 0px;
     margin: 0px;
+    -webkit-text-stroke: 0.5px white;  
+    color: #8447FF;
 }
 
 .galeria{
@@ -140,6 +142,9 @@ main{
 .galeria div img{
     margin: 10px;
     border-radius: 15px;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 /*!FIN GALERIA*/
 
@@ -275,12 +280,15 @@ main section{
     display: flex;
     align-items: center;
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
 }
 
 .columnas div img{
     height: 100vh;
     width: 60%;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 @media screen and (max-width: 1188px)
@@ -353,6 +361,7 @@ main section{
     border-radius: 0px 0px 10px 0px;
     border-width: 10px black; 
     border: solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .productos div img{
