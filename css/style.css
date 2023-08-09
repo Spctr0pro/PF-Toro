@@ -125,7 +125,7 @@ main {
 }
 
 .titulo-galeria {
-    width: 90%;
+    width: 100%;
     text-align: center;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
@@ -156,6 +156,7 @@ main {
     width: 250px;
     height: 250px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: solid 5px #8447FF;
 }
 
 @media screen and (max-width: 550px) {
@@ -356,6 +357,7 @@ main section {
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     margin: 0px;
+    border: solid 2px #FFB2E6;
 }
 
 .columnas div img {
@@ -367,6 +369,7 @@ main section {
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    border: solid 2px #FFB2E6;
 }
 
 @media screen and (max-width: 1188px) {
@@ -409,7 +412,7 @@ main section {
 
 @media screen and (max-width: 500px) {
     .columnas div img {
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         border-radius: 10px;
         margin-left: 0px;
@@ -473,13 +476,15 @@ main section {
     display: inline-block;
     border-radius: 0px 0px 10px 0px;
     border-width: 10px black;
-    border: solid;
+    border: solid 2px #FFB2E6;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .productos div img {
     width: 240px;
     height: 200px;
+    margin-top: 2px;
+    border: solid 2px #FFB2E6;
 }
 
 .productos div h3 {
@@ -489,8 +494,8 @@ main section {
 
 .productos div a {
     text-decoration: none;
-    background-color: #8447FF;
-    color: white;
+    background-color: #8CFFDA;
+    color: #8447FF;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -500,6 +505,7 @@ main section {
     border-style: solid;
     border-width: 2px;
     border-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .productos div a:hover {
@@ -572,9 +578,9 @@ footer div a i {
     font-size: 40px;
     position: relative;
     left: 0;
-    color: #FFB2E6;
+    color: white;
 }
 
 footer div a i:hover {
-    color: white;
+    color: #FFB2E6;
 }
