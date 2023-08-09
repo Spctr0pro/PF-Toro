@@ -7,7 +7,7 @@
     <title>ELISA DESAYUNOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -56,7 +56,7 @@
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Ingresa un texto"
                                 aria-label="Search" />
-                                <button class="btn btn-outline-success color-header-button" type="submit">
+                            <button class="btn btn-outline-success color-header-button" type="submit">
                                 Buscar
                             </button>
                         </form>
@@ -65,56 +65,38 @@
             </nav>
         </section>
     </header>
-    <main>
-        <section class="contacto">
-            <form action="" method="" enctype="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="correo">Correo:</label>
-                    <input type="email">
-                </div>
-                <div>
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password">
-                </div>
-                <div>
-                    <h3>Genero:</h3>
-                    <div>
-                        <label for="masculino">Masculino</label>
-                        <input type="radio" name="genero">
-                        <label for="femenino">Femenino</label>
-                        <input type="radio" name="genero">
-                        <label for="otro">Otro</label>
-                        <input type="radio" name="genero">
-                    </div>
-                </div>
-                <div>
-                    <h3>País:</h3>
-                    <select name="select" id="">
-                        <option value="0">Argentina</option>
-                        <option value="1">Colombia</option>
-                        <option value="2">Chile</option>
-                    </select>
-                </div>
-                <div>
-                    <h3>Escribenos un mensaje</h3>
-                    <textarea name="" id="" cols="30" rows="10">
+    <main class="form-contacto">
+        <h1>FORMULARIO DE CONTACTO</h1>
+        <div class="grid-container">
+            <div class="grid-items">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="email" class="form-control" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="grid-items">
+                <label for="exampleFormControlInput1" class="form-label" inputmode="email">Email</label>
+                <input type="email" class="form-control" placeholder="Ingresa tu correo">
+            </div>
+            <div class="grid-items">
+                <label for="exampleFormControlInput1" class="form-label">Teléfono</label>
+                <input type="email" class="form-control"
+                    placeholder="Ingresa tu telefono">
+            </div>
+            <div class="grid-items">
+                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                <input type="email" class="form-control" placeholder="Ingresa el asunto">
+            </div>
+            <div class="grid-items">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                    placeholder="Ingresa tu comentario"></textarea>
+            </div>
+            <div class="grid-items">
 
-                    </textarea>
+                <div class="d-grid gap-2 col-md-3 col-sm-12 col-lg-3 mx-auto">
+                    <button class="btn btn-primary btn-form" type="button">Enviar</button>
                 </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-            </form>
-        </section>
+            </div>
+        </div>
     </main>
     <div class="fixed">
         <a href="https://web.whatsapp.com/" target="_blank">
