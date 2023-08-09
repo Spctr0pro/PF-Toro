@@ -418,6 +418,17 @@ main section {
     }
 }
 
+@media screen and (max-width: 390px) {
+    .columnas div img {
+        height: 60vh;
+        width: 100%;
+        border-radius: 10px;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 @media screen and (max-width: 340px) {
     .columnas div img {
         height: 50vh;
