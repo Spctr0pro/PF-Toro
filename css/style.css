@@ -391,7 +391,7 @@ main section {
     text-align: center;
     background-color: #FFB2E6;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
     text-transform: uppercase;
     color: #8447FF;
     font-size: 45px;
@@ -426,7 +426,7 @@ main section {
 }
 
 .productos div h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
