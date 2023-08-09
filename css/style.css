@@ -117,10 +117,17 @@ main {
 
 /*! GALERIA */
 
+.ajustar-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .titulo-galeria {
-    width: 100%;
+    width: 90%;
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     background-color: #FFB2E6;
@@ -128,13 +135,19 @@ main {
     margin: 0px;
     -webkit-text-stroke: 0.5px white;
     color: #8447FF;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 10px;
 }
 
 .galeria div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    background-color: #8CFFDA;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 
 .galeria div img {
@@ -174,6 +187,7 @@ main {
     border-radius: 15px;
     -webkit-text-stroke: 0.5px white;
     width: 60%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .grid-container {
@@ -296,7 +310,7 @@ main section {
     padding: 10px;
     background-color: #FFB2E6;
     border-radius: 10px 15px 0px 0px;
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 0.5px white;    
 }
 
 .hero p {
@@ -350,6 +364,9 @@ main section {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     margin: 5px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1188px) {
