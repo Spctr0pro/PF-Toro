@@ -105,16 +105,6 @@ header img {
     background-color: rgb(166, 60, 168);
 } */
 
-
-
-/*! ----- MAIN ----- */
-
-main {
-    background-color: transparent;
-    text-align: center;
-    margin: 15px;
-}
-
 /*! GALERIA */
 
 .ajustar-contenido{
@@ -158,20 +148,6 @@ main {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: solid 5px #8447FF;
 }
-
-@media screen and (max-width: 550px) {
-    .galeria div img {
-    width: 90%;
-    height: 300px;
-    }
-}
-
-@media screen and (max-width: 516px) {
-    .titulo-galeria {
-        font-size: 25px;
-    }
-}
-
 /*!FIN GALERIA*/
 
 /*!CONTACTO*/
@@ -262,35 +238,16 @@ main {
     background-color: white;
     color: #8447FF;
 }
-
-/* MEDIA QUERY */
-@media screen and (max-width: 980px)
-{
-    .grid-container {
-        width: 90%;
-    }
-    .form-contacto h1{
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 540px)
-{
-    .grid-container {
-        width: 100%;
-    }
-    .form-contacto h1{
-        width: 100%;
-    }
-    .form-contacto h1{
-        font-size: 25px;;
-    }
-}
-
 /*!FIN CANTACTO*/
+
+/*! ----- MAIN ----- */
+
 main {
+    background-color: transparent;
+    text-align: center;
     margin-right: 5px;
     margin-left: 5px;
+    /* margin: 15px; */
 }
 
 main section {
@@ -325,10 +282,9 @@ main section {
     /* background-color: #FFB2E6; */
     /* border-radius: 10px 15px 0px 0px; */
     -webkit-text-stroke: 2.5px purple;    
-   
 }
 
-.hero span {
+.hero h1 span {
     /* color: #FFB2E6; */
     font-size: 90px;
 }
@@ -494,14 +450,6 @@ footer .footer-content {
     justify-content: space-between;
 }
 
-footer p {
-    text-align: center;
-    background-color: #8CFFDA;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-}
-
 footer div {
     text-align: center;
     justify-items: center;
@@ -537,6 +485,13 @@ footer div a i:hover {
     color: #FFB2E6;
 }
 
+footer p {
+    text-align: center;
+    background-color: #8CFFDA;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
 
 /*! MEDIA QUERY */
 @media screen and (max-width: 1770px) {
@@ -665,5 +620,43 @@ footer div a i:hover {
 {
     .hero p {
         font-size: 15px;
+    }
+}
+
+/* MEDIA QUERY CONTACTO */
+@media screen and (max-width: 980px)
+{
+    .grid-container {
+        width: 90%;
+    }
+    .form-contacto h1{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 540px)
+{
+    .grid-container {
+        width: 100%;
+    }
+    .form-contacto h1{
+        width: 100%;
+    }
+    .form-contacto h1{
+        font-size: 25px;;
+    }
+}
+
+/* MEDIA QUERY GALERIA */
+@media screen and (max-width: 550px) {
+    .galeria div img {
+    width: 90%;
+    height: 300px;
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .titulo-galeria {
+        font-size: 25px;
     }
 }
