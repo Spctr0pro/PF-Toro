@@ -317,7 +317,7 @@ main section {
 
 .hero h1 {
     color: white;
-    font-size: 45px;
+    font-size: 80px;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     border: 0px white solid;
@@ -330,7 +330,7 @@ main section {
 
 .hero span {
     /* color: #FFB2E6; */
-    font-size: 55px;
+    font-size: 90px;
 }
 
 /* .hero p {
@@ -572,6 +572,13 @@ footer div a i:hover {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero span {
+        /* color: #FFB2E6; */
+        font-size: 70px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -584,7 +591,11 @@ footer div a i:hover {
         margin-bottom: 10px;
     }
     .hero h1 {
-        font-size: 25px;
+        font-size: 50px;
+    }
+    .hero span {
+        /* color: #FFB2E6; */
+        font-size: 60px;
     }
     .bienvenidos h2 {
         font-size: 25px;
@@ -603,6 +614,13 @@ footer div a i:hover {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero span {
+        /* color: #FFB2E6; */
+        font-size: 50px;
+    }
     .bienvenidos h2 {
         font-size: 20px;
     }
@@ -619,6 +637,13 @@ footer div a i:hover {
         margin-left: 0px;
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero span {
+        /* color: #FFB2E6; */
+        font-size: 40px;
     }
 }
 
