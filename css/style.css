@@ -541,7 +541,7 @@ footer div a i:hover {
 /*! MEDIA QUERY */
 @media screen and (max-width: 1770px) {
     .columnas div img {
-        height: 80vh;
+        height: 60vh;
         width: 100%;
         border-radius: 10px;
         margin-left: 0px;
@@ -550,7 +550,7 @@ footer div a i:hover {
 
 @media screen and (max-width: 990px) {
     .columnas div img {
-        height: 100vh;
+        height: 80vh;
         width: 60%;
         border-radius: 10px;
         margin-top: 10px;
@@ -565,7 +565,7 @@ footer div a i:hover {
 
 @media screen and (max-width: 770px) {
     .columnas div img {
-        height: 100vh;
+        height: 75vh;
         width: 70%;
         border-radius: 10px;
         margin-left: 0px;
@@ -583,7 +583,7 @@ footer div a i:hover {
 
 @media screen and (max-width: 600px) {
     .columnas div img {
-        height: 100vh;
+        height: 80vh;
         width: 80%;
         border-radius: 10px;
         margin-left: 0px;
@@ -607,7 +607,7 @@ footer div a i:hover {
 
 @media screen and (max-width: 500px) {
     .columnas div img {
-        height: 100vh;
+        height: 65vh;
         width: 100%;
         border-radius: 10px;
         margin-left: 0px;
@@ -631,7 +631,7 @@ footer div a i:hover {
 
 @media screen and (max-width: 400px) {
     .columnas div img {
-        height: 80vh;
+        height: 60vh;
         width: 100%;
         border-radius: 10px;
         margin-left: 0px;
@@ -649,7 +649,7 @@ footer div a i:hover {
 
 @media screen and (max-width: 350px) {
     .columnas div img {
-        height: 70vh;
+        height: 50vh;
         width: 100%;
         border-radius: 10px;
         margin-left: 0px;
