@@ -21,13 +21,13 @@ header {
 }
 
 .menu-collapse:hover {
-    color: #8447ff;
+    color: $color-terciario;
     border-color: white;
     background-color: white;
 }
 
 .menu-color-header {
-    background-color: #8447ff;
+    background-color: $color-terciario;
     border-width: 1px;
     border: solid;
     border-color: white;

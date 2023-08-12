@@ -1,0 +1,48 @@
+$color-de-fondo: #FFFFE8;
+$color-primario: #8CFFDA;
+$color-secundario:#FFB2E6;
+$color-terciario:#8447FF;
+$color-p:rgb(60, 1, 78);
+/* VARIABLES MENU */
+$color-menu: $color-terciario;
+$border-color-menu: white;
+$color-button-collapsed:lightcyan;
+$border-color-menu-collapsed:white;
+$text-color-menu-collapsed:white;
+$over-menu-text-color-collapsed:$color-terciario;
+$over-menu-border-color-collapsed:white;
+$over-menu-background-color-collapsed:white;
+$btn-buscar-menu-border-color:white;
+$btn-buscar-menu-color:white;
+$over-btn-buscar-menu-background-color:#FFFFE8;
+$over-btn-buscar-menu-border-color:#D972FF;
+$over-btn-buscar-menu-color:#D972FF;
+/* FIN VARIABLES MENU*/
+
+/* FUENTE TEXTOS */
+$fuente-textos: 'Poppins', sans-serif;
+$background-color-titulos:$color-secundario;
+$titulo-principal-color:white;
+$titulo-principal-border-color:purple;
+$titulo-secundario-color:$color-terciario;
+$titulo-secundario-background-color:$color-secundario;
+$titulo-secundario-webkit-text-stroke-color: white;
+$color-parrafos:$color-p;
+$border-color-parrafos:$color-secundario;
+$background-color-parrafos:$color-primario;
+/* FIN FUENTE TEXTOS */
+
+/* VARIABLES PAGINA GALERIA */
+$gal-background-color-div:$color-primario;
+$gal-border-color-div:$color-terciario;
+/* FIN VARIABLES GALERIA */
+
+/* VARIABLES PAGINA FORMULARIO */
+$form-grid-container-border-color:$color-terciario;
+$form-grid-container-background-color:white;
+$form-btn-background-color:$color-terciario;
+$form-btn-text-color:white;
+$form-btn-text-color-over:$color-terciario;
+$form-btn-background-color-over:white;
+/* FIN VARIABLES FORMULARIO */
+

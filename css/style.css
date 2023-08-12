@@ -34,14 +34,13 @@ header img {
     border-color: white;
     background-color: lightcyan;
     border: 1px solid;
-
 }
 
-.menu-collapse:hover {
+/* .menu-collapse:hover {
     color: #8447ff;
     border-color: white;
     background-color: white;
-}
+} */
 
 .menu-color-header {
     background-color: #8447ff;
@@ -324,7 +323,6 @@ main section {
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    border-width: 0px #8447FF;
     border-radius: 10px;
     margin-right: 10px;
     background-color: #8CFFDA;

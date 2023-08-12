@@ -1,6 +1,6 @@
 /*! ----- FOOTER ----- */
 footer {
-    background-color: #8447FF;
+    background-color: $color-terciario;
     height: 60px;
     margin-right: 4px;
     margin-left: 4px;
@@ -29,13 +29,13 @@ footer {
                 color: white;
             }
             i:hover {
-                color: #FFB2E6;
+                color: $color-secundario;
             }
         }
     }
     p {
         text-align: center;
-        background-color: #8CFFDA;
+        background-color: $color-primario;
         font-size: 14px;
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
