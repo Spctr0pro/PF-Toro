@@ -194,16 +194,18 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: $color-primario;
+    // background-color: $color-terciario;
     border-radius: 15px;
     margin-top: 10px;
     img {
         margin: 10px;
+        padding: 5px;
         border-radius: 15px;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 400px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        border: solid 5px $color-terciario;
+        border: solid 2px $color-terciario;
+        background-color: $color-secundario;
     }
 }
 /*!FIN GALERIA*/
