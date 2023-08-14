@@ -491,6 +491,26 @@ footer {
     width: 70%;
     height: 400px; } }
 
+@media screen and (max-width: 500px) {
+  .galeria div img {
+    width: 75%;
+    height: 400px; } }
+
+@media screen and (max-width: 450px) {
+  .galeria div img {
+    width: 80%;
+    height: 400px; } }
+
+@media screen and (max-width: 400px) {
+  .galeria div img {
+    width: 80%;
+    height: 400px; } }
+
+@media screen and (max-width: 350px) {
+  .galeria div img {
+    width: 90%;
+    height: 400px; } }
+
 @media screen and (max-width: 516px) {
   .titulo-galeria {
     font-size: 25px; } }
