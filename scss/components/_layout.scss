@@ -143,7 +143,7 @@ main {
             border-width: 2px;
             border-color: white;
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-            :hover {
+            &:hover {
                 background-color: white;
                 color: $color-terciario;
             }
@@ -158,7 +158,7 @@ main {
     a img {
         width: 40px;
         height: 40px;
-        :hover {
+        &:hover {
             color: $color-secundario;
         }
     }
@@ -292,7 +292,7 @@ main {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    :hover {
+    &:hover {
         background-color: white;
         color: $color-terciario;
     }

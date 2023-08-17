@@ -201,7 +201,7 @@ main {
       border-width: 2px;
       border-color: white;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-      .productos div a :hover {
+      .productos div a:hover {
         background-color: white;
         color: #8447FF; }
 
@@ -212,7 +212,7 @@ main {
   .fixed a img {
     width: 40px;
     height: 40px; }
-    .fixed a img :hover {
+    .fixed a img:hover {
       color: #FFB2E6; }
 
 /*! GALERIA */
@@ -332,7 +332,7 @@ main {
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500; }
-  .btn-form :hover {
+  .btn-form:hover {
     background-color: white;
     color: #8447FF; }
 
@@ -364,7 +364,7 @@ footer {
         position: relative;
         left: 0;
         color: white; }
-      footer div a i:hover {
+      footer div ai:hover {
         color: #FFB2E6; }
   footer p {
     text-align: center;
