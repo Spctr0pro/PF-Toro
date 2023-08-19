@@ -18,7 +18,7 @@ main {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: white;
+    color: nth($colores, 9);
     text-align: center;
     border-radius: 10px;
     display: flex;
@@ -26,18 +26,18 @@ main {
     text-align: center;
     justify-content: center;
     h1 {
-        color: white;
-        font-size: 80px;
+        color: nth($colores, 9);
+        font-size: nth($font-size, 5);
         font-family: 'Poppins', sans-serif;
         font-weight: 900;
-        border: 0px white solid;
+        border: 0px nth($colores, 9) solid;
         padding: 0px;
-        /* background-color: $color-secundario; */
+        /* background-color: nth($colores, 3); */
         /* border-radius: 10px 15px 0px 0px; */
         -webkit-text-stroke: 2.5px purple;    
         span {
-            /* color: $color-secundario; */
-            font-size: 90px;
+            /* color: nth($colores, 3); */
+            font-size: nth($font-size, 6);
         }
     }
 }
@@ -46,34 +46,34 @@ main {
     padding-top: 20px;
     background-color: transparent;
     h2 {
-        color: $color-terciario;
-        font-size: 45px;
+        color: nth($colores, 4);
+        font-size: nth($font-size, 4);
         font-family: 'Poppins', sans-serif;
         font-weight: 900;
         text-align: center;
         border: solid 0px;
         border-radius: 10px;
         border-color: purple;
-        background-color: $color-secundario;
+        background-color: nth($colores, 3);
         padding: 10px;
-        -webkit-text-stroke: 0.5px white;
+        -webkit-text-stroke: 0.5px nth($colores, 9);
     }
 }
 
 .columnas div p {
-    color: $color-p;
-    font-size: 15px;
+    color: nth($colores, 5);
+    font-size: nth($font-size, 1);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     border-radius: 10px;
     margin-right: 10px;
-    background-color: $color-primario;
+    background-color: nth($colores, 2);
     height: 100%;
     display: flex;
     align-items: center;
     text-align: center;
     margin: 0px;
-    border: solid 2px $color-secundario;
+    border: solid 2px nth($colores, 3);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -86,44 +86,44 @@ main {
     margin-left: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
-    border: solid 2px $color-secundario;
+    border: solid 2px nth($colores, 3);
 }
 
 .productos {
-    background-color: $color-primario;
+    background-color: nth($colores, 2);
     border-radius: 10px;
     h2 {
         text-align: center;
-        background-color: $color-secundario;
+        background-color: nth($colores, 3);
         padding: 20px;
         margin-top: 20px;
         text-transform: uppercase;
-        color: $color-terciario;
-        font-size: 45px;
+        color: nth($colores, 4);
+        font-size: nth($font-size, 4);
         font-family: 'Poppins', sans-serif;
         font-weight: 900;
         border-width: 10px black;
         border-radius: 10px 10px 0px 0px;
         border: none;
-        -webkit-text-stroke: 0.5px white;
+        -webkit-text-stroke: 0.5px nth($colores, 9);
     }
     div {
-        border: 1px solid white;
+        border: 1px solid nth($colores, 9);
         width: 250px;
         height: 350px;
         text-align: center;
-        background-color: $color-terciario;
-        color: white;
+        background-color: nth($colores, 4);
+        color: nth($colores, 9);
         margin: 10px;
         display: inline-block;
         border-radius: 0px 0px 10px 0px;
-        border: solid 2px $color-secundario;
+        border: solid 2px nth($colores, 3);
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         img {
             width: 240px;
             height: 200px;
             margin-top: 2px;
-            border: solid 2px $color-secundario;
+            border: solid 2px nth($colores, 3);
         }
         h3 {
             margin-top: 10px;
@@ -131,9 +131,9 @@ main {
         }
         a {
             text-decoration: none;
-            background-color: $color-primario;
-            color: $color-terciario;
-            font-size: 20px;
+            background-color: nth($colores, 2);
+            color: nth($colores, 4);
+            font-size: nth($font-size, 2);
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             text-align: center;
@@ -141,11 +141,11 @@ main {
             border-radius: 10px;
             border-style: solid;
             border-width: 2px;
-            border-color: white;
+            border-color: nth($colores, 9);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             &:hover {
-                background-color: white;
-                color: $color-terciario;
+                background-color: nth($colores, 9);
+                color: nth($colores, 4);
             }
         }
     }
@@ -159,7 +159,7 @@ main {
         width: 40px;
         height: 40px;
         &:hover {
-            color: $color-secundario;
+            color: nth($colores, 3);
         }
     }
 }
@@ -176,14 +176,14 @@ main {
 .titulo-galeria {
     width: 100%;
     text-align: center;
-    font-size: 45px;
+    font-size: nth($font-size, 4);
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    background-color: $color-secundario;
+    background-color: nth($colores, 3);
     border-radius: 15px 15px 15px 15px;
     margin: 0px;
-    -webkit-text-stroke: 0.5px white;
-    color: $color-terciario;
+    -webkit-text-stroke: 0.5px nth($colores, 9);
+    color: nth($colores, 4);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 10px;
 }
@@ -194,7 +194,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    // background-color: $color-terciario;
+    // background-color: nth($colores, 4);
     border-radius: 15px;
     margin-top: 10px;
     img {
@@ -204,8 +204,8 @@ main {
         width: 300px;
         height: 400px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        border: solid 2px $color-terciario;
-        background-color: $color-secundario;
+        border: solid 2px nth($colores, 4);
+        background-color: nth($colores, 3);
     }
 }
 /*!FIN GALERIA*/
@@ -219,23 +219,23 @@ main {
 }
 
 .form-contacto h1{
-    color: $color-terciario;
-    font-size: 45px;
+    color: nth($colores, 4);
+    font-size: nth($font-size, 4);
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     text-align: center;
-    border: 0px white solid;
+    border: 0px nth($colores, 9) solid;
     padding: 10px;
-    background-color: $color-secundario;
+    background-color: nth($colores, 3);
     border-radius: 15px;
-    -webkit-text-stroke: 0.5px white;
+    -webkit-text-stroke: 0.5px nth($colores, 9);
     width: 60%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .grid-container {
-    border: solid 10px $color-terciario;
-    background-color: white;
+    border: solid 10px nth($colores, 4);
+    background-color: nth($colores, 9);
     width: 60%;
     margin: 5px;
     /*! Habilitar grilla */
@@ -268,7 +268,7 @@ main {
 .grid-items {
     /* border: solid 2px #af091d; */
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: nth($font-size, 2);
     padding: 0px;
     text-align: start;
     padding: 10px;
@@ -286,14 +286,14 @@ main {
 .btn-form {
     margin: 15px;
     padding: 2px;
-    background-color: $color-terciario;
-    color: white;
+    background-color: nth($colores, 4);
+    color: nth($colores, 9);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    font-size: 20px;
+    font-size: nth($font-size, 2);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     &:hover {
-        background-color: white;
-        color: $color-terciario;
+        background-color: nth($colores, 9);
+        color: nth($colores, 4);
     }
 }

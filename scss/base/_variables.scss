@@ -1,48 +1,144 @@
-$color-de-fondo: #FFFFE8;
-$color-primario: #8CFFDA;
-$color-secundario:#FFB2E6;
-$color-terciario:#8447FF;
-$color-p:rgb(60, 1, 78);
+/* LISTAS */
+$colores:
+#FFFFE8, /*1 - COLOR DE FONDO*/
+#8CFFDA, /*2 - COLOR PRIMARIO*/
+#FFB2E6, /*3 - COLOR SECUNDARIO*/
+#8447FF, /*4 - COLOR TERCIARIO*/
+rgb(60, 1, 78), /*5 - COLOR PARRAFOS*/
+#D972FF, /*6 -COLOR DE BORDE DIV PARRAFOS*/
+purple, /*7 - COLOR DE BORDE TITULO*/
+lightcyan, /*8 - COLOR DE BOTON MENU COLAPSADO*/
+white; /*9 - COLOR GENERICO*/
+
+$font-size:
+15px, /*1 - p*/
+20px, /*2 - a*/
+40px, /*3 - i*/
+45px, /*4 - h2*/
+80px, /*5 - h1*/
+90px, /*6 - span*/
+25px, /*7 - media query*/
+60px, /*8 - media query*/
+70px, /*9 - media query*/
+50px, /*10 - media query*/
+30px, /*11 - media query*/
+8px; /*12 - media query*/
+
+/* FIN LISTAS */
+
+/* MAPAS */
+$boton:(
+    //KEY-VALUE
+    bg-boton: white,
+    border-boton: 1px,
+    color-text: white
+);
+// map-get($boton, bg-boton);
+/* FIN MAPAS */
+
+/* EXTENDS */
+// % PLACEHOLDER
+%flex{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+};
+// SE UTILIZA DE LA SIGUIENTE MANERA: @extend %flex
+/* FIN EXTENDS */
+
+/* MIXIN */
+// @mixin flex{
+//     display: flex;
+//     justify-content:center;
+//     align-items:center;
+// }
+
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+};
+
+// .contendor-ejemplo-uso-mixin{
+//     @include flex (flex, center, center);
+// }
+
+/* FIN MIXIN */
+
+/* OPERACIONES ARITMETICAS */
+// + - * /
+// $ancho: 500px;
+
+// .ejemplo-operadores-aritmeticos{
+//     width: $ancho / 4;
+// }
+/* FIN OPERACIONES ARITMETICAS */
+
+/* CONDICIONALES */
+// @mixin ejemplo-condiciones ($option){
+//     @if $option == 1{
+//         background-color: black;
+//     }
+//     @else if $option == 2{
+//         background-color: white;
+//     }
+//     @else if $option == 2{
+//         background-color: olive;
+//     }
+// }
+/* FIN CONDICIONALES*/
+
+/* BUCLE */
+//  @for $i from 1 through 6{
+//     .clase-#{$i}{
+//         order: $i;
+//     }
+//  };
+/* FIN BUCLE */
+
+
 /* VARIABLES MENU */
-$color-menu: $color-terciario;
-$border-color-menu: white;
-$color-button-collapsed:lightcyan;
-$border-color-menu-collapsed:white;
-$text-color-menu-collapsed:white;
-$over-menu-text-color-collapsed:$color-terciario;
-$over-menu-border-color-collapsed:white;
-$over-menu-background-color-collapsed:white;
-$btn-buscar-menu-border-color:white;
-$btn-buscar-menu-color:white;
-$over-btn-buscar-menu-background-color:#FFFFE8;
-$over-btn-buscar-menu-border-color:#D972FF;
-$over-btn-buscar-menu-color:#D972FF;
+$color-menu: nth($colores, 4);
+$border-color-menu: nth($colores, 9);
+$color-button-collapsed:nth($colores, 8);
+$border-color-menu-collapsed:nth($colores, 9);
+$text-color-menu-collapsed:nth($colores, 9);
+$over-menu-text-color-collapsed:nth($colores, 4);
+$over-menu-border-color-collapsed:nth($colores, 9);
+$over-menu-background-color-collapsed:nth($colores, 9);
+$btn-buscar-menu-border-color:nth($colores, 9);
+$btn-buscar-menu-color:nth($colores, 9);
+$over-btn-buscar-menu-background-color:nth($colores, 1);
+$over-btn-buscar-menu-border-color:nth($colores, 6);
+$over-btn-buscar-menu-color:nth($colores, 6);
 /* FIN VARIABLES MENU*/
 
 /* FUENTE TEXTOS */
 $fuente-textos: 'Poppins', sans-serif;
-$background-color-titulos:$color-secundario;
-$titulo-principal-color:white;
-$titulo-principal-border-color:purple;
-$titulo-secundario-color:$color-terciario;
-$titulo-secundario-background-color:$color-secundario;
-$titulo-secundario-webkit-text-stroke-color: white;
-$color-parrafos:$color-p;
-$border-color-parrafos:$color-secundario;
-$background-color-parrafos:$color-primario;
+$background-color-titulos:nth($colores, 3);
+$titulo-principal-color:nth($colores, 9);
+$titulo-principal-border-color:nth($colores, 7);
+$titulo-secundario-color:nth($colores, 4);
+$titulo-secundario-background-color:nth($colores, 3);
+$titulo-secundario-webkit-text-stroke-color: nth($colores, 9);
+$color-parrafos:nth($colores, 5);
+$border-color-parrafos:nth($colores, 3);
+$background-color-parrafos:nth($colores, 2);
 /* FIN FUENTE TEXTOS */
 
 /* VARIABLES PAGINA GALERIA */
-$gal-background-color-div:$color-primario;
-$gal-border-color-div:$color-terciario;
+$gal-background-color-div:nth($colores, 2);
+$gal-border-color-div:nth($colores, 4);
 /* FIN VARIABLES GALERIA */
 
 /* VARIABLES PAGINA FORMULARIO */
-$form-grid-container-border-color:$color-terciario;
-$form-grid-container-background-color:white;
-$form-btn-background-color:$color-terciario;
-$form-btn-text-color:white;
-$form-btn-text-color-over:$color-terciario;
-$form-btn-background-color-over:white;
+$form-grid-container-border-color:nth($colores, 4);
+$form-grid-container-background-color:nth($colores, 9);
+$form-btn-background-color:nth($colores, 4);
+$form-btn-text-color:nth($colores, 9);
+$form-btn-text-color-over:nth($colores, 4);
+$form-btn-background-color-over:nth($colores, 9);
 /* FIN VARIABLES FORMULARIO */
+
+
 

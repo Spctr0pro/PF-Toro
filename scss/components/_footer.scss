@@ -1,6 +1,6 @@
 /*! ----- FOOTER ----- */
 footer {
-    background-color: $color-terciario;
+    background-color: nth($colores, 4);
     height: 60px;
     margin-right: 4px;
     margin-left: 4px;
@@ -23,20 +23,20 @@ footer {
             position: relative;
             left: 0;
             i {
-                font-size: 40px;
+                font-size: nth($font-size, 3);
                 position: relative;
                 left: 0;
-                color: white;
+                color: nth($colores, 9);
             }
             &i:hover {
-                color: $color-secundario;
+                color: nth($colores, 2);
             }
         }
     }
     p {
         text-align: center;
-        background-color: $color-primario;
-        font-size: 14px;
+        background-color: nth($colores, 1);
+        font-size: nth($font-size, 1);
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
     }

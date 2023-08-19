@@ -35,11 +35,11 @@
     }
 
     .hero h1 {
-        font-size: 60px;
+        font-size: nth($font-size, 8);
 
         span {
             /* color: #FFB2E6; */
-            font-size: 70px;
+            font-size: nth($font-size, 9);
         }
     }
 }
@@ -55,35 +55,35 @@
     }
 
     .hero h1 {
-        font-size: 50px;
+        font-size: nth($font-size, 10);
 
         span {
             /* color: #FFB2E6; */
-            font-size: 60px;
+            font-size: nth($font-size, 8);
         }
     }
 
     .bienvenidos h2 {
-        font-size: 25px;
+        font-size: nth($font-size, 7);
     }
 
     .productos h2 {
-        font-size: 25px;
+        font-size: nth($font-size, 7);
     }
 }
 
 @media screen and (max-width: 500px) {
     .hero h1 {
-        font-size: 40px;
+        font-size: nth($font-size, 3);
 
         span {
             /* color: #FFB2E6; */
-            font-size: 50px;
+            font-size: nth($font-size, 10);
         }
     }
 
     .bienvenidos h2 {
-        font-size: 20px;
+        font-size: nth($font-size, 2);
     }
 
     .columnas div img {
@@ -98,11 +98,11 @@
 
 @media screen and (max-width: 400px) {
     .hero h1 {
-        font-size: 30px;
+        font-size: nth($font-size, 11);
 
         span {
             /* color: #FFB2E6; */
-            font-size: 40px;
+            font-size: nth($font-size, 3);
         }
     }
 
@@ -127,13 +127,13 @@
     }
 
     footer p {
-        font-size: 8px;
+        font-size: nth($font-size, 12);
     }
 }
 
 @media screen and (max-height:420px) {
     .hero p {
-        font-size: 15px;
+        font-size: nth($font-size, 1);
     }
 }
 
@@ -151,7 +151,7 @@
 @media screen and (max-width: 540px) {
     .form-contacto h1 {
         width: 100%;
-        font-size: 25px;
+        font-size: nth($font-size, 7);
     }
 
     .grid-container {
@@ -197,6 +197,6 @@
 
 @media screen and (max-width: 516px) {
     .titulo-galeria {
-        font-size: 25px;
+        font-size: nth($font-size, 7);
     }
 }

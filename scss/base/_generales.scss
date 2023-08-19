@@ -12,5 +12,5 @@
 }
 
 body {
-    background-color: $color-de-fondo;
+    background-color: nth($colores, 1);
 }

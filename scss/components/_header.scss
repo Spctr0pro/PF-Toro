@@ -13,30 +13,30 @@ header {
 }
 
 .menu-collapse {
-    color: white;
-    border-color: white;
-    background-color: lightcyan;
+    color: nth($colores, 9);
+    border-color: nth($colores, 9);
+    background-color: nth($colores, 8);
     border: 1px solid;
 
 }
 
 .menu-collapse:hover {
     color: $color-terciario;
-    border-color: white;
-    background-color: white;
+    border-color: nth($colores, 9);
+    background-color: nth($colores, 9);
 }
 
 .menu-color-header {
     background-color: $color-terciario;
     border-width: 1px;
     border: solid;
-    border-color: white;
+    border-color: nth($colores, 9);
     border-radius: 15px;
     /* height: 100px; */
 }
 
 .menu-color-header a {
-    color: white;
+    color: nth($colores, 9);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-decoration: none;
@@ -45,15 +45,15 @@ header {
 }
 
 .color-header-button {
-    border-color: white;
+    border-color: nth($colores, 9);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     text-decoration: none;
-    color: white;
+    color: nth($colores, 9);
 }
 
 .color-header-button:hover {
-    background-color: #FFFFE8;
+    background-color: nth($colores, 1);
     color: #D972FF;
     border: solid #D972FF 1px;
 }
