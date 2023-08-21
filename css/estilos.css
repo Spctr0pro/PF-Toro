@@ -1,5 +1,19 @@
 /* LISTAS */
 /*9 - COLOR GENERICO*/
+/*12 - media query*/
+/* FIN LISTAS */
+/* MAPAS */
+/* FIN MAPAS */
+/* EXTENDS */
+/* FIN EXTENDS */
+/* MIXIN */
+/* FIN MIXIN */
+/* OPERACIONES ARITMETICAS */
+/* FIN OPERACIONES ARITMETICAS */
+/* CONDICIONALES */
+/* FIN CONDICIONALES*/
+/* BUCLE */
+/* FIN BUCLE */
 /* VARIABLES MENU */
 /* FIN VARIABLES MENU*/
 /* FUENTE TEXTOS */
@@ -102,11 +116,11 @@ main {
     font-weight: 900;
     border: 0px white solid;
     padding: 0px;
-    /* background-color: $color-secundario; */
+    /* background-color: nth($colores, 3); */
     /* border-radius: 10px 15px 0px 0px; */
     -webkit-text-stroke: 2.5px purple; }
     .hero h1 span {
-      /* color: $color-secundario; */
+      /* color: nth($colores, 3); */
       font-size: 90px; }
 
 .bienvenidos {
@@ -367,11 +381,11 @@ footer {
         left: 0;
         color: white; }
       footer div ai:hover {
-        color: #FFB2E6; }
+        color: #8CFFDA; }
   footer p {
     text-align: center;
-    background-color: #8CFFDA;
-    font-size: 14px;
+    background-color: #FFFFE8;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500; }
 

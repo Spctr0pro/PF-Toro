@@ -21,13 +21,13 @@ header {
 }
 
 .menu-collapse:hover {
-    color: $color-terciario;
+    color: nth($colores, 4);
     border-color: nth($colores, 9);
     background-color: nth($colores, 9);
 }
 
 .menu-color-header {
-    background-color: $color-terciario;
+    background-color: nth($colores, 4);
     border-width: 1px;
     border: solid;
     border-color: nth($colores, 9);
