@@ -27,23 +27,30 @@ $font-size:
 /* FIN LISTAS */
 
 /* MAPAS */
-$boton:(
+$boton-formulario:(
     //KEY-VALUE
-    bg-boton: white,
-    border-boton: 1px,
-    color-text: white
+    bg-boton: nth($colores, 4),
+    b-boton: 1px,
+    c-text: nth($colores, 9),
+    padd: 2px,
+    marg:15px,
+    f-size: nth($font-size, 2),
+    f-family: 'Poppins',
+    t-family: sans-serif,
+    f-weight: 500,
+    b-shadow-1: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
+    b-shadow-2: rgba(0, 0, 0, 0.22) 0px 15px 12px
 );
-// map-get($boton, bg-boton);
+// map-get(boton-formulario, bg-boton);
 /* FIN MAPAS */
 
 /* EXTENDS */
 // % PLACEHOLDER
-%flex{
-    display: flex;
-    justify-content:center;
-    align-items:center;
+%font-type{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 };
-// SE UTILIZA DE LA SIGUIENTE MANERA: @extend %flex
+// SE UTILIZA DE LA SIGUIENTE MANERA: @extend %font-type
 /* FIN EXTENDS */
 
 /* MIXIN */
@@ -53,10 +60,11 @@ $boton:(
 //     align-items:center;
 // }
 
-@mixin flex($flex, $justify, $align){
+@mixin flex($flex, $justify, $align, $text-align){
     display: $flex;
     justify-content: $justify;
     align-items: $align;
+    text-align: $text-align;
 };
 
 // .contendor-ejemplo-uso-mixin{

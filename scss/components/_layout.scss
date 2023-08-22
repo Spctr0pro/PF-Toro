@@ -11,20 +11,17 @@ main {
 }
 
 .hero {
+    @include flex (flex, center, center, center);
     width: 100%;
     height: 50vb;
+    // background: linear-gradient(rgba(180, 57, 166, 0.251), rgba(84, 26, 116, 0.037)), url(../img/header-desayuno.jpg);;
     background-image: url(../img/header-desayuno.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: nth($colores, 9);
-    text-align: center;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    border-radius: 10px;    
     h1 {
         color: nth($colores, 9);
         font-size: nth($font-size, 5);
@@ -61,17 +58,14 @@ main {
 }
 
 .columnas div p {
+    @include flex (flex, center, center, center);
     color: nth($colores, 5);
     font-size: nth($font-size, 1);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    @extend %font-type;
     border-radius: 10px;
     margin-right: 10px;
     background-color: nth($colores, 2);
     height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
     margin: 0px;
     border: solid 2px nth($colores, 3);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -119,6 +113,10 @@ main {
         border-radius: 0px 0px 10px 0px;
         border: solid 2px nth($colores, 3);
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        &:hover{
+            transform: scale(1.05) ;
+            transition-duration: 1.05s;
+        }
         img {
             width: 240px;
             height: 200px;
@@ -134,8 +132,7 @@ main {
             background-color: nth($colores, 2);
             color: nth($colores, 4);
             font-size: nth($font-size, 2);
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
+            @extend %font-type;
             text-align: center;
             padding: 7px;
             border-radius: 10px;
@@ -144,6 +141,7 @@ main {
             border-color: nth($colores, 9);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             &:hover {
+                transition-duration: 0.5s;
                 background-color: nth($colores, 9);
                 color: nth($colores, 4);
             }
@@ -167,9 +165,7 @@ main {
 /*! GALERIA */
 
 .ajustar-contenido{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex (flex, center, center, center);
     flex-direction: column;
 }
 
@@ -189,10 +185,8 @@ main {
 }
 
 .galeria div {
-    display: flex;
+    @include flex (flex, center, center, center);
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     // background-color: nth($colores, 4);
     border-radius: 15px;
@@ -206,6 +200,10 @@ main {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         border: solid 2px nth($colores, 4);
         background-color: nth($colores, 3);
+        &:hover{
+            transform: scale(1.05) ;
+            transition-duration: 1s;
+        }
     }
 }
 /*!FIN GALERIA*/
@@ -267,7 +265,7 @@ main {
 
 .grid-items {
     /* border: solid 2px #af091d; */
-    font-family: 'Poppins', sans-serif;
+    @extend %font-type;
     font-size: nth($font-size, 2);
     padding: 0px;
     text-align: start;
@@ -284,14 +282,14 @@ main {
 }
 
 .btn-form {
-    margin: 15px;
-    padding: 2px;
-    background-color: nth($colores, 4);
-    color: nth($colores, 9);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    font-size: nth($font-size, 2);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    margin: map-get($boton-formulario, marg);
+    padding: map-get($boton-formulario, padd);;
+    background-color: map-get($boton-formulario, bg-boton);
+    color: map-get($boton-formulario, c-text);
+    box-shadow: map-get($boton-formulario, b-shadow-1), map-get($boton-formulario, b-shadow-2);
+    font-size: map-get($boton-formulario, f-size);
+    font-family: map-get($boton-formulario, f-family), map-get($boton-formulario, t-family);
+    font-weight: map-get($boton-formulario, f-weight);;
     &:hover {
         background-color: nth($colores, 9);
         color: nth($colores, 4);

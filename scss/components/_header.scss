@@ -1,8 +1,7 @@
-
-
 header {
     position: sticky;
     top: 0px;
+
     img {
         width: 80px;
         height: 80px;
@@ -36,24 +35,22 @@ header {
 }
 
 .menu-color-header a {
+    @extend %font-type;
     color: nth($colores, 9);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     text-decoration: none;
     padding: 10px;
     margin: 2px;
 }
 
 .color-header-button {
+    @extend %font-type;
     border-color: nth($colores, 9);
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     text-decoration: none;
     color: nth($colores, 9);
 }
 
 .color-header-button:hover {
     background-color: nth($colores, 1);
-    color: #D972FF;
-    border: solid #D972FF 1px;
+    color: nth($colores, 6);
+    border: solid nth($colores, 6) 1px;
 }
