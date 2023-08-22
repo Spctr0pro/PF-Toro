@@ -41,7 +41,8 @@ body {
 
 header {
   position: sticky;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
   header img {
     width: 80px;
     height: 80px;
@@ -166,7 +167,8 @@ main {
 
 .productos {
   background-color: #8CFFDA;
-  border-radius: 10px; }
+  border-radius: 10px;
+  z-index: 1; }
   .productos h2 {
     text-align: center;
     background-color: #FFB2E6;
@@ -195,7 +197,7 @@ main {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
     .productos div:hover {
       transform: scale(1.05);
-      transition-duration: 1.05s; }
+      transition-duration: 1.0s; }
     .productos div img {
       width: 240px;
       height: 200px;
@@ -261,7 +263,8 @@ main {
   flex-wrap: wrap;
   width: 100%;
   border-radius: 15px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  z-index: 1; }
   .galeria div img {
     margin: 10px;
     padding: 5px;

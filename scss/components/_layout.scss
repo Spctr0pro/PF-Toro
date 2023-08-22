@@ -86,6 +86,7 @@ main {
 .productos {
     background-color: nth($colores, 2);
     border-radius: 10px;
+    z-index: 1;
     h2 {
         text-align: center;
         background-color: nth($colores, 3);
@@ -115,7 +116,7 @@ main {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         &:hover{
             transform: scale(1.05) ;
-            transition-duration: 1.05s;
+            transition-duration: 1.0s;
         }
         img {
             width: 240px;
@@ -191,6 +192,7 @@ main {
     // background-color: nth($colores, 4);
     border-radius: 15px;
     margin-top: 10px;
+    z-index: 1;
     img {
         margin: 10px;
         padding: 5px;
