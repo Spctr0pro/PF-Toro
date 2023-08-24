@@ -32,6 +32,7 @@ main {
         /* background-color: nth($colores, 3); */
         /* border-radius: 10px 15px 0px 0px; */
         -webkit-text-stroke: 2.5px purple;    
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         span {
             /* color: nth($colores, 3); */
             font-size: nth($font-size, 6);
@@ -54,6 +55,7 @@ main {
         background-color: nth($colores, 3);
         padding: 10px;
         -webkit-text-stroke: 0.5px nth($colores, 9);
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
 }
 
@@ -101,6 +103,7 @@ main {
         border-radius: 10px 10px 0px 0px;
         border: none;
         -webkit-text-stroke: 0.5px nth($colores, 9);
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
     div {
         border: 1px solid nth($colores, 9);
@@ -182,6 +185,7 @@ main {
     -webkit-text-stroke: 0.5px nth($colores, 9);
     color: nth($colores, 4);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 10px;
 }
 
@@ -231,6 +235,7 @@ main {
     -webkit-text-stroke: 0.5px nth($colores, 9);
     width: 60%;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .grid-container {
