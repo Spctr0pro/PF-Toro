@@ -137,7 +137,7 @@ main {
     border-radius: 10px;
     border-color: purple;
     background-color: #FFB2E6;
-    padding: 10px;
+    padding: 20px;
     -webkit-text-stroke: 0.5px white;
     text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
@@ -257,7 +257,7 @@ main {
   color: #8447FF;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  padding: 10px; }
+  padding: 20px; }
 
 .galeria div {
   display: flex;
@@ -297,7 +297,7 @@ main {
   font-weight: 900;
   text-align: center;
   border: 0px white solid;
-  padding: 10px;
+  padding: 20px;
   background-color: #FFB2E6;
   border-radius: 15px;
   -webkit-text-stroke: 0.5px white;
