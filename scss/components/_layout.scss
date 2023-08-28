@@ -89,12 +89,13 @@ main {
     background-color: nth($colores, 2);
     border-radius: 10px;
     z-index: 1;
+    margin-bottom: 10px;
     h2 {
         text-align: center;
         background-color: nth($colores, 3);
         padding: 20px;
         margin-top: 20px;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         color: nth($colores, 4);
         font-size: nth($font-size, 4);
         font-family: 'Poppins', sans-serif;

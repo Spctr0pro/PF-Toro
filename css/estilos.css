@@ -170,13 +170,13 @@ main {
 .productos {
   background-color: #8CFFDA;
   border-radius: 10px;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 10px; }
   .productos h2 {
     text-align: center;
     background-color: #FFB2E6;
     padding: 20px;
     margin-top: 20px;
-    text-transform: uppercase;
     color: #8447FF;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
