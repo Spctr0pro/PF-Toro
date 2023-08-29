@@ -3,6 +3,7 @@ main {
     text-align: center;
     margin-right: 5px;
     margin-left: 5px;
+
     /* margin: 15px; */
     section {
         margin-right: 0px;
@@ -21,7 +22,8 @@ main {
     background-position: center;
     background-attachment: fixed;
     color: nth($colores, 9);
-    border-radius: 10px;    
+    border-radius: 10px;
+
     h1 {
         color: nth($colores, 9);
         font-size: nth($font-size, 5);
@@ -31,8 +33,9 @@ main {
         padding: 0px;
         /* background-color: nth($colores, 3); */
         /* border-radius: 10px 15px 0px 0px; */
-        -webkit-text-stroke: 2.5px purple;    
+        -webkit-text-stroke: 2.5px purple;
         text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
         span {
             /* color: nth($colores, 3); */
             font-size: nth($font-size, 6);
@@ -43,6 +46,7 @@ main {
 .bienvenidos {
     padding-top: 20px;
     background-color: transparent;
+
     h2 {
         color: nth($colores, 4);
         font-size: nth($font-size, 4);
@@ -90,6 +94,7 @@ main {
     border-radius: 10px;
     z-index: 1;
     margin-bottom: 10px;
+
     h2 {
         text-align: center;
         background-color: nth($colores, 3);
@@ -106,6 +111,7 @@ main {
         -webkit-text-stroke: 0.5px nth($colores, 9);
         text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
+
     div {
         border: 1px solid nth($colores, 9);
         width: 250px;
@@ -118,20 +124,24 @@ main {
         border-radius: 0px 0px 10px 0px;
         border: solid 2px nth($colores, 3);
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        &:hover{
-            transform: scale(1.05) ;
+
+        &:hover {
+            transform: scale(1.05);
             transition-duration: 1.0s;
         }
+
         img {
             width: 240px;
             height: 200px;
             margin-top: 2px;
             border: solid 2px nth($colores, 3);
         }
+
         h3 {
             margin-top: 10px;
             margin-bottom: 40px;
         }
+
         a {
             text-decoration: none;
             background-color: nth($colores, 2);
@@ -145,6 +155,7 @@ main {
             border-width: 2px;
             border-color: nth($colores, 9);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
             &:hover {
                 transition-duration: 0.5s;
                 background-color: nth($colores, 9);
@@ -158,9 +169,11 @@ main {
     position: fixed;
     bottom: 33px;
     right: 10px;
+
     a img {
         width: 40px;
         height: 40px;
+
         &:hover {
             color: nth($colores, 3);
         }
@@ -169,7 +182,7 @@ main {
 
 /*! GALERIA */
 
-.ajustar-contenido{
+.ajustar-contenido {
     @include flex (flex, center, center, center);
     flex-direction: column;
 }
@@ -198,6 +211,7 @@ main {
     border-radius: 15px;
     margin-top: 10px;
     z-index: 1;
+
     img {
         margin: 10px;
         padding: 5px;
@@ -207,12 +221,14 @@ main {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         border: solid 2px nth($colores, 4);
         background-color: nth($colores, 3);
-        &:hover{
-            transform: scale(1.05) ;
+
+        &:hover {
+            transform: scale(1.05);
             transition-duration: 1s;
         }
     }
 }
+
 /*!FIN GALERIA*/
 
 /*!CONTACTO*/
@@ -223,7 +239,7 @@ main {
     flex-direction: column;
 }
 
-.form-contacto h1{
+.form-contacto h1 {
     color: nth($colores, 4);
     font-size: nth($font-size, 4);
     font-family: 'Poppins', sans-serif;
@@ -291,15 +307,178 @@ main {
 
 .btn-form {
     margin: map-get($boton-formulario, marg);
-    padding: map-get($boton-formulario, padd);;
+    padding: map-get($boton-formulario, padd);
+    ;
     background-color: map-get($boton-formulario, bg-boton);
     color: map-get($boton-formulario, c-text);
     box-shadow: map-get($boton-formulario, b-shadow-1), map-get($boton-formulario, b-shadow-2);
     font-size: map-get($boton-formulario, f-size);
     font-family: map-get($boton-formulario, f-family), map-get($boton-formulario, t-family);
-    font-weight: map-get($boton-formulario, f-weight);;
+    font-weight: map-get($boton-formulario, f-weight);
+    ;
+
     &:hover {
         background-color: nth($colores, 9);
         color: nth($colores, 4);
     }
 }
+
+/* FIN CONTACTO*/
+
+/* PRODUCTOS */
+.titulo-productos {
+    color: nth($colores, 4);
+    font-size: nth($font-size, 4);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    border: solid 0px;
+    border-radius: 10px;
+    border-color: purple;
+    background-color: nth($colores, 3);
+    padding: 20px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: 0.5px nth($colores, 9);
+    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.pagina-productos {
+    background-color: nth($colores, 2);
+    border-radius: 10px;
+    z-index: 1;
+    margin-bottom: 10px;
+    border: solid 2px nth($colores, 2);
+    h2 {
+        text-align: center;
+        background-color: nth($colores, 4);
+        padding: 10px;
+        margin-top: 0px;
+        // text-transform: uppercase;
+        color: nth($colores, 1);
+        font-size: nth($font-size, 4);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        border-width: 10px black;
+        border-radius: 10px 10px 0px 0px;
+        border: none;
+        -webkit-text-stroke: 0.5px nth($colores, 4);
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    div {
+        width: 250px;
+        height: 350px;
+        text-align: center;
+        background-color: nth($colores, 3);
+        color: nth($colores, 9);
+        margin: 10px;
+        display: inline-block;
+        border-radius: 0px 0px 10px 0px;
+        border: solid 2px nth($colores, 4);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+        &:hover {
+            transform: scale(1.05);
+            transition-duration: 1.0s;
+        }
+
+        img {
+            width: 240px;
+            height: 200px;
+            margin-top: 2px;
+            border: solid 2px nth($colores, 4);
+            border-radius: 15px;
+        }
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: nth($colores, 9);
+            color: nth($colores, 4);
+            font-size: nth($font-size, 2);
+            @extend %font-type;
+            text-align: center;
+            padding: 7px;
+            border-radius: 10px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: nth($colores, 4);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+            &:hover {
+                transition-duration: 0.5s;
+                background-color: nth($colores, 4);
+                color: nth($colores, 1);
+                border-color: nth($colores, 1);
+            }
+        }
+    }
+}
+
+/* FIN PRODUCTOS */
+
+/* NOSOTROS */
+.nosotros {
+    padding-top: 1px;
+    background-color: transparent;
+
+    h1 {
+        color: nth($colores, 4);
+        font-size: nth($font-size, 4);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        border: solid 0px;
+        border-radius: 10px;
+        border-color: purple;
+        background-color: nth($colores, 3);
+        padding: 20px;
+        -webkit-text-stroke: 0.5px nth($colores, 9);
+        text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+.columnas-rows{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.columnas-nosotros div p {
+    @include flex (flex, center, center, center);
+    color: nth($colores, 5);
+    font-size: nth($font-size, 1);
+    @extend %font-type;
+    border-radius: 10px;
+    margin-right: 10px;
+    background-color: nth($colores, 2);
+    height: 100%;
+    margin: 0px;
+    border: solid 2px nth($colores, 3);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding-bottom: 10px;
+}
+
+.carrucel{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    border: solid 2px nth($colores, 3);
+    background-color: nth($colores, 4);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.columnas-nosotros div img {
+    height: 60vh;
+    border-radius: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* FIN NOSOTROS*/

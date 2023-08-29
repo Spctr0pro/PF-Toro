@@ -200,3 +200,43 @@
         font-size: nth($font-size, 7);
     }
 }
+
+/* FIN MEDIA QUERY GALERIA */
+
+/* MEDIA QUERY PRODUCTOS Y NOSOTROS */
+@media screen and (max-width: 992px) {
+    .carrucel {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        border: solid 2px nth($colores, 3);
+        background-color: nth($colores, 4);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .pagina-productos h1 {
+        font-size: nth($font-size, 3);
+    }
+
+    .pagina-productos h2 {
+        font-size: nth($font-size, 3);
+    }
+
+    .nosotros h1 {
+        font-size: nth($font-size, 3);
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .pagina-productos h2 {
+        font-size: nth($font-size, 2);
+    }
+
+    .nosotros h1 {
+        font-size: nth($font-size, 2);
+    }
+}
+
+/* FIN MEDIA QUERY PRODUCTOS */
