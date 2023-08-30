@@ -387,12 +387,12 @@ main {
             height: 200px;
             margin-top: 2px;
             border: solid 2px nth($colores, 4);
-            border-radius: 15px;
         }
 
         h3 {
             margin-top: 10px;
             margin-bottom: 40px;
+            color: nth($colores, 4);
         }
 
         a {
