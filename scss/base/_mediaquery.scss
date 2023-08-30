@@ -215,27 +215,51 @@
     }
 }
 
-@media screen and (max-width: 550px) {
-    .pagina-productos h1 {
-        font-size: nth($font-size, 3);
-    }
-
-    .pagina-productos h2 {
-        font-size: nth($font-size, 3);
-    }
-
+@media screen and (max-width: 575px) {
     .nosotros h1 {
-        font-size: nth($font-size, 3);
+        font-size: 2rem;
     }
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 550px) {
+    .titulo-productos {
+        font-size: 2rem;
+    }
+
     .pagina-productos h2 {
-        font-size: nth($font-size, 2);
+        font-size: 1.5rem;
     }
 
     .nosotros h1 {
-        font-size: nth($font-size, 2);
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .titulo-productos {
+        font-size: 1.5rem;
+    }
+
+    .pagina-productos h2 {
+        font-size: 1.3rem;
+    }
+
+    .nosotros h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .titulo-productos {
+        font-size: 1.2rem;
+    }
+
+    .pagina-productos h2 {
+        font-size: 1rem;
+    }
+
+    .nosotros h1 {
+        font-size: 1.2rem;
     }
 }
 
