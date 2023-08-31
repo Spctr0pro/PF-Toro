@@ -495,6 +495,8 @@ main section div div .contenedor-seccion {
             font-weight: 550;
             color: nth($colores, 4);
             -webkit-text-stroke: 0.2px nth($colores, 1);
+            display: inline;
+            white-space: nowrap;
         }
     }
     img {

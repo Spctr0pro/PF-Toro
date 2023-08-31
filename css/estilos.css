@@ -501,7 +501,9 @@ main section div div .contenedor-seccion {
     font-size: 20px;
     font-weight: 550;
     color: #8447FF;
-    -webkit-text-stroke: 0.2px #FFFFE8; }
+    -webkit-text-stroke: 0.2px #FFFFE8;
+    display: inline;
+    white-space: nowrap; }
 
 .columnas-nosotros div img {
   height: 55vh;
