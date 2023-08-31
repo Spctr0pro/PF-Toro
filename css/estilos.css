@@ -154,7 +154,8 @@ main {
   height: 100%;
   margin: 0px;
   border: solid 2px #FFB2E6;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 10px; }
 
 .columnas div img {
   height: 60vh;
@@ -481,7 +482,8 @@ main {
   margin: 0px;
   border: solid 2px #FFB2E6;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  padding: 10px; }
 
 .carrucel {
   margin-top: 0px;
