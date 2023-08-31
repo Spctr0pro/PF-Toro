@@ -443,6 +443,16 @@ main {
     }
 }
 
+.carrucel{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    border: solid 2px nth($colores, 3);
+    background-color: nth($colores, 1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 100%;
+}
+
 .columnas-rows{
     display: flex;
     justify-content: center;
@@ -453,9 +463,7 @@ main {
 main section div div .contenedor-seccion {
     height: 100%;
     border-radius: 10px;
-    margin-right: 10px;
     background-color: nth($colores, 2);
-    margin: 0px;
     border: solid 2px nth($colores, 3);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     img {
@@ -471,35 +479,30 @@ main section div div .contenedor-seccion {
     }
 }
 
-
-.columnas-nosotros div p {
-    color: nth($colores, 5);
-    font-size: nth($font-size, 1);
-    @extend %font-type;
-    padding: 10px;
-    span{
-        font-size: nth($font-size, 2);
-        font-weight: 550;
-        color: nth($colores, 4);
-        -webkit-text-stroke: 0.2px nth($colores, 1);
+.columnas-nosotros div {
+    // div{
+    //     padding-left: 0px;
+    //     padding-right: 0px;
+    //     margin: 0px;
+    // }
+    p {
+        color: nth($colores, 5);
+        font-size: nth($font-size, 1);
+        @extend %font-type;
+        padding: 10px;
+        span{
+            font-size: nth($font-size, 2);
+            font-weight: 550;
+            color: nth($colores, 4);
+            -webkit-text-stroke: 0.2px nth($colores, 1);
+        }
     }
-}
-
-.carrucel{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 10px;
-    border: solid 2px nth($colores, 3);
-    background-color: nth($colores, 4);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-.columnas-nosotros div img {
-    height: 60vh;
-    border-radius: 10px;
-    margin-left: 0px;
-    margin-top: 0px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    img {
+        height: 55vh;
+        border-radius: 10px;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding:0px 0px 0px 0px;
+    }
 }
 /* FIN NOSOTROS*/

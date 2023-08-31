@@ -462,6 +462,15 @@ main {
     -webkit-text-stroke: 0.5px white;
     text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
 
+.carrucel {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  border: solid 2px #FFB2E6;
+  background-color: #FFFFE8;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 100%; }
+
 .columnas-rows {
   display: flex;
   justify-content: center;
@@ -471,9 +480,7 @@ main {
 main section div div .contenedor-seccion {
   height: 100%;
   border-radius: 10px;
-  margin-right: 10px;
   background-color: #8CFFDA;
-  margin: 0px;
   border: solid 2px #FFB2E6;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
   main section div div .contenedor-seccion img {
@@ -496,21 +503,12 @@ main section div div .contenedor-seccion {
     color: #8447FF;
     -webkit-text-stroke: 0.2px #FFFFE8; }
 
-.carrucel {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  border: solid 2px #FFB2E6;
-  background-color: #8447FF;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
-
 .columnas-nosotros div img {
-  height: 60vh;
+  height: 55vh;
   border-radius: 10px;
   margin-left: 0px;
   margin-top: 0px;
-  padding-bottom: 10px;
-  padding-top: 10px; }
+  padding: 0px 0px 0px 0px; }
 
 /* FIN NOSOTROS*/
 /*! ----- FOOTER ----- */
