@@ -371,18 +371,18 @@ main {
         width: 350px;
         height: 450px;
         text-align: center;
-        background-color: nth($colores, 9);
+        // background-color: nth($colores, 9);
         color: nth($colores, 9);
         margin: 10px;
         display: inline-block;
         border-radius: 0px 0px 10px 0px;
         // border: solid 2px nth($colores, 4);
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
+        background: linear-gradient(to bottom, nth($colores, 9) 65%, nth($colores, 3) 100%);
         &:hover {
             transform: scale(1.05);
             // animation: rotation 4s max($numbers: 1) linear;
             transition-duration: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
 
         // @keyframes rotation {
