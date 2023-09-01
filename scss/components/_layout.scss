@@ -63,7 +63,7 @@ main {
     }
 }
 
-.columnas div p {
+.columnas div div p {
     @include flex (flex, center, center, center);
     color: nth($colores, 5);
     font-size: nth($font-size, 1);
@@ -76,6 +76,15 @@ main {
     border: solid 2px nth($colores, 3);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 10px;
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    span {
+        font-size: nth($font-size, 2);
+        font-weight: 550;
+        color: nth($colores, 4);
+        -webkit-text-stroke: 0.2px nth($colores, 1);
+    }
 }
 
 .columnas div img {
@@ -114,53 +123,74 @@ main {
     }
 
     div {
-        border: 1px solid nth($colores, 9);
-        width: 250px;
-        height: 350px;
+        width: 350px;
+        height: 450px;
         text-align: center;
-        background-color: nth($colores, 4);
+        // background-color: nth($colores, 9);
         color: nth($colores, 9);
         margin: 10px;
+        padding: 5px;
         display: inline-block;
         border-radius: 0px 0px 10px 0px;
-        border: solid 2px nth($colores, 3);
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        // border: solid 2px nth($colores, 4);
+        background: linear-gradient(to bottom, nth($colores, 9) 5%, nth($colores, 3) 100%);
 
         &:hover {
             transform: scale(1.05);
-            transition-duration: 1.0s;
+            // animation: rotation 4s max($numbers: 1) linear;
+            transition-duration: 0.5s;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
 
+        // @keyframes rotation {
+        //     50% {
+        //         transform: rotate(180deg);
+        //     }
+
+        //     100% {
+        //         transform: rotate(0deg);
+        //     }
+        // }
+
         img {
-            width: 240px;
-            height: 200px;
-            margin-top: 2px;
-            border: solid 2px nth($colores, 3);
+            width: 100%;
+            height: 300px;
+            margin-top: 0px;
+            border-bottom: solid 1px nth($colores, 4);
         }
 
         h3 {
             margin-top: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            color: nth($colores, 4);
+            @extend %font-type;
+            font-weight: 500;
+            padding: 5px;
         }
 
         a {
             text-decoration: none;
-            background-color: nth($colores, 2);
+            position: sticky;
+            background-color: nth($colores, 9);
             color: nth($colores, 4);
             font-size: nth($font-size, 2);
             @extend %font-type;
             text-align: center;
-            padding: 7px;
+            padding: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-bottom: 20px;
             border-radius: 10px;
             border-style: solid;
             border-width: 2px;
-            border-color: nth($colores, 9);
+            border-color: nth($colores, 4);
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
             &:hover {
                 transition-duration: 0.5s;
-                background-color: nth($colores, 9);
-                color: nth($colores, 4);
+                background-color: nth($colores, 4);
+                color: nth($colores, 1);
+                border-color: nth($colores, 1);
             }
         }
     }
@@ -374,10 +404,12 @@ main {
         // background-color: nth($colores, 9);
         color: nth($colores, 9);
         margin: 10px;
+        padding: 5px;
         display: inline-block;
         border-radius: 0px 0px 10px 0px;
         // border: solid 2px nth($colores, 4);
-        background: linear-gradient(to bottom, nth($colores, 9) 65%, nth($colores, 3) 100%);
+        background: linear-gradient(to bottom, nth($colores, 9) 5%, nth($colores, 3) 100%);
+
         &:hover {
             transform: scale(1.05);
             // animation: rotation 4s max($numbers: 1) linear;
@@ -404,7 +436,7 @@ main {
 
         h3 {
             margin-top: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             color: nth($colores, 4);
             @extend %font-type;
             font-weight: 500;
@@ -413,12 +445,16 @@ main {
 
         a {
             text-decoration: none;
+            position: sticky;
             background-color: nth($colores, 9);
             color: nth($colores, 4);
             font-size: nth($font-size, 2);
             @extend %font-type;
             text-align: center;
-            padding: 7px;
+            padding: 10px;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-bottom: 20px;
             border-radius: 10px;
             border-style: solid;
             border-width: 2px;
