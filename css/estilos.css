@@ -6,7 +6,7 @@
 /* FIN MAPAS */
 /* EXTENDS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&display=swap");
-.menu-color-header a, .color-header-button, .columnas div p, .productos div a, .grid-items, .pagina-productos div a, .columnas-nosotros div p, footer p {
+.menu-color-header a, .color-header-button, .columnas div p, .productos div a, .grid-items, .pagina-productos div h3, .pagina-productos div a, .columnas-nosotros div p, footer p {
   font-family: 'Poppins', sans-serif;
   font-weight: 500; }
 
@@ -403,28 +403,29 @@ main {
     -webkit-text-stroke: 0.5px #8447FF;
     text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
   .pagina-productos div {
-    width: 250px;
-    height: 350px;
+    width: 350px;
+    height: 450px;
     text-align: center;
-    background-color: #FFB2E6;
+    background-color: white;
     color: white;
     margin: 10px;
     display: inline-block;
     border-radius: 0px 0px 10px 0px;
-    border: solid 2px #8447FF;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; }
     .pagina-productos div:hover {
       transform: scale(1.05);
-      transition-duration: 1.0s; }
+      transition-duration: 0.5s; }
     .pagina-productos div img {
-      width: 240px;
-      height: 200px;
-      margin-top: 2px;
-      border: solid 2px #8447FF; }
+      width: 100%;
+      height: 300px;
+      margin-top: 0px;
+      border-bottom: solid 1px #8447FF; }
     .pagina-productos div h3 {
       margin-top: 10px;
       margin-bottom: 40px;
-      color: #8447FF; }
+      color: #8447FF;
+      font-weight: 500;
+      padding: 5px; }
     .pagina-productos div a {
       text-decoration: none;
       background-color: white;
@@ -726,6 +727,9 @@ footer {
     font-size: 1.2rem; }
   .pagina-productos h2 {
     font-size: 1rem; }
+    .pagina-productos h2 div {
+      width: 300px;
+      height: 400px; }
   .nosotros h1 {
     font-size: 1.2rem; } }
 
