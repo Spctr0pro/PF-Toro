@@ -262,11 +262,15 @@ main {
   .ajustar-contenido p {
     color: #3c014e;
     font-size: 15px;
+    width: 100%;
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
     border: solid #FFB2E6;
     background-color: #8CFFDA; }
+    .ajustar-contenido p .titulo-p {
+      display: inline;
+      white-space: normal; }
     .ajustar-contenido p span {
       font-size: 20px;
       font-weight: 550;
