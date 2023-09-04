@@ -216,6 +216,27 @@ main {
 .ajustar-contenido {
     @include flex (flex, center, center, center);
     flex-direction: column;
+    p{
+        color: nth($colores, 5);
+        font-size: nth($font-size, 1);
+        @extend %font-type;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+        border: solid nth($colores, 3);
+        background-color: nth($colores, 2);
+        // border-top: 1px;
+        // border-bottom: 1px;
+        
+        span {
+            font-size: nth($font-size, 2);
+            font-weight: 550;
+            color: nth($colores, 4);
+            -webkit-text-stroke: 0.2px nth($colores, 1);
+            display: inline;
+            white-space: nowrap;
+        }
+    }
 }
 
 .titulo-galeria {
@@ -229,7 +250,7 @@ main {
     margin: 0px;
     -webkit-text-stroke: 0.5px nth($colores, 9);
     color: nth($colores, 4);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 20px;
 }
@@ -241,20 +262,24 @@ main {
     // background-color: nth($colores, 4);
     border-radius: 15px;
     margin-top: 10px;
-
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, nth($colores, 2) 15%, nth($colores, 3) 100%);
+    border: solid 2px nth($colores, 3);
+    
     img {
-        margin: 10px;
-        padding: 5px;
-        border-radius: 15px;
+        margin: 18px 5px 18px 5px;
+        // padding: 25px;
+        border-radius: 10px 0px 10px 0px;
         width: 300px;
         height: 400px;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        border: solid 2px nth($colores, 4);
-        background-color: nth($colores, 3);
+        background-color: nth($colores, 9);
+        // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border: ridge 5px nth($colores, 3);
 
         &:hover {
             transform: scale(1.05);
             transition-duration: 1s;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
     }
 }
