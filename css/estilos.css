@@ -275,7 +275,7 @@ main {
   text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   padding: 20px; }
 
-.galeria div {
+.galeria {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,9 +283,8 @@ main {
   flex-wrap: wrap;
   width: 100%;
   border-radius: 15px;
-  margin-top: 10px;
-  z-index: 1; }
-  .galeria div img {
+  margin-top: 10px; }
+  .galeria img {
     margin: 10px;
     padding: 5px;
     border-radius: 15px;
@@ -294,7 +293,7 @@ main {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border: solid 2px #8447FF;
     background-color: #FFB2E6; }
-    .galeria div img:hover {
+    .galeria img:hover {
       transform: scale(1.05);
       transition-duration: 1s; }
 

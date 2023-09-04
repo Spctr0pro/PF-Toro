@@ -234,14 +234,13 @@ main {
     padding: 20px;
 }
 
-.galeria div {
+.galeria {
     @include flex (flex, center, center, center);
     flex-wrap: wrap;
     width: 100%;
     // background-color: nth($colores, 4);
     border-radius: 15px;
     margin-top: 10px;
-    z-index: 1;
 
     img {
         margin: 10px;
